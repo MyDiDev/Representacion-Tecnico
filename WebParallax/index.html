@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo">Logo</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Trabajo</a></li>
+        <li><a href="#">Contactanos</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="stars.png" id="stars" />
+      <img src="moon.png" id="moon" />
+      <img src="mountains_behind.png" id="mountains_behind" />
+      <h2 id="text">Moon Light Parallax</h2>
+      <a href="#sec" id="btn">Explora</a>
+      <img src="mountains_front.png" id="mountains_front" />
+    </section>
+    <div class="sec" id="sec">
+      <h2>Demostración del Efecto de Desplazamiento Paralaje</h2>
+      <p>
+        El paralaje es el desplazamiento aparente de un objeto debido a un
+        cambio en el punto de vista del observador. El paralaje también afecta a
+        los instrumentos ópticos, como visores de rifles, binoculares,
+        microscopios y cámaras réflex de doble lente que ven objetos desde
+        ángulos ligeramente diferentes. Muchos animales, junto con los humanos,
+        tienen dos ojos con campos visuales superpuestos que utilizan el
+        paralaje para obtener percepción de profundidad; este proceso se conoce
+        como estereopsis. En la visión por computadora, el efecto se utiliza
+        para la visión estereoscópica por computadora, y existe un dispositivo
+        llamado telémetro de paralaje que lo usa para encontrar el rango, y en
+        algunas variaciones también la altitud de un objetivo. <br /><br />
+        El paralaje es el desplazamiento aparente de un objeto debido a un
+        cambio en el punto de vista del observador. El paralaje también afecta a
+        los instrumentos ópticos, como visores de rifles, binoculares,
+        microscopios y cámaras réflex de doble lente que ven objetos desde
+        ángulos ligeramente diferentes. Muchos animales, junto con los humanos,
+        tienen dos ojos con campos visuales superpuestos que utilizan el
+        paralaje para obtener percepción de profundidad; este proceso se conoce
+        como estereopsis. En la visión por computadora, el efecto se utiliza
+        para la visión estereoscópica por computadora, y existe un dispositivo
+        llamado telémetro de paralaje que lo usa para encontrar el rango, y en
+        algunas variaciones también la altitud de un objetivo. <br /><br />
+        El paralaje también afecta a los instrumentos ópticos, como visores de
+        rifles, binoculares, microscopios y cámaras réflex de doble lente que
+        ven objetos desde ángulos ligeramente diferentes. Muchos animales, junto
+        con los humanos, tienen dos ojos con campos visuales superpuestos que
+        utilizan el paralaje para obtener percepción de profundidad; este
+        proceso se conoce como estereopsis. En la visión por computadora, el
+        efecto se utiliza para la visión estereoscópica por computadora, y
+        existe un dispositivo llamado telémetro de paralaje que lo usa para
+        encontrar el rango, y en algunas variaciones también la altitud de un
+        objetivo.
+      </p>
+    </div>
+    <script>
+      let stars = document.getElementById("stars");
+      let moon = document.getElementById("moon");
+      let mountains_behind = document.getElementById("mountains_behind");
+      let text = document.getElementById("text");
+      let btn = document.getElementById("btn");
+      let mountains_front = document.getElementById("mountains_front");
+      let header = document.querySelector("header");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + "px";
+        moon.style.top = value * 1.05 + "px";
+        mountains_behind.style.top = value * 0.5 + "px";
+        mountains_front.style.top = value * 0 + "px";
+        text.style.marginRight = value * 4 + "px";
+        text.style.marginTop = value * 1.5 + "px";
+        btn.style.marginTop = value * 1.5 + "px";
+        header.style.top = value * 0.5 + "px";
+      });
+    </script>
+  </body>
+</html>

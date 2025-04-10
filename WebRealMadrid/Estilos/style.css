@@ -1,0 +1,101 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+span {
+  color: rgb(227, 227, 9);
+}
+
+#club-icon {
+  width: 60px;
+}
+
+#tournament-icon {
+  width: 40px;
+  margin: 15px;
+}
+
+#match-result {
+  font-size: 27px;
+  color: white;
+  font-weight: bolder;
+}
+
+#match {
+  background: linear-gradient(
+    90deg,
+    rgba(15, 33, 69, 1) 29%,
+    rgba(0, 0, 0, 1) 83%
+  );
+  width: 18rem;
+  flex-direction: column;
+  padding: 0 0;
+}
+
+#card:hover {
+  scale: 1.01;
+  cursor: pointer;
+  transform: translateX(-10px);
+  transition: all ease-in-out 0.3s;
+}
+
+a:hover {
+  color: rgba(12, 29, 63, 1);
+  transition: all ease-in-out 0.3s;
+}
+
+.main-title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 10px;
+  font-style: italic;
+}
+
+section {
+  margin-top: 50px;
+}
+
+/* Por ahora no incluido en la estructura, por el boostrap */

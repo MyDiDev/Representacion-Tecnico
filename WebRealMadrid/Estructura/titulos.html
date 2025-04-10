@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <title>Titulos</title>
+  <style>
+    body {
+      font-family: "Open Sans";
+    }
+
+    .main {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .club-name {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #212529;
+    }
+
+    .container {
+      margin-top: 35px;
+    }
+
+    .trophy-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .trophy-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .trophy-count {
+      font-size: 2.5rem;
+      font-weight: bold;
+
+      margin-bottom: 5px;
+      background-clip: text;
+      color: transparent;
+      background: linear-gradient(to top, #FFA500, #c9a700);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .trophy-name {
+      font-size: 1.1rem;
+      color: #6c757d;
+    }
+
+    .award-card {
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 30px;
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .award-card img {
+      max-width: 100px;
+      margin-bottom: 15px;
+    }
+    .award-title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .award-count {
+      font-size: 32px;
+      font-weight: bold;
+      color: #000;
+    }
+    .award-years {
+      font-size: 12px;
+      color: #555;
+    }
+
+    section {
+      margin-top: 80px;
+    }
+
+    main {
+      margin-bottom: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+    integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+    crossorigin="anonymous"></script>
+    <header style="position: sticky; top: 0; z-index: 999" class="shadow-sm">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+        <div class="container-fluid">
+          <a href="home.html" class="navbar-brand" aria-current="page"
+            ><img
+              src="https://www.pngplay.com/wp-content/uploads/13/Real-Madrid-Transparent-File.png"
+              alt="real-madrid-logo"
+              width="30px"
+          /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a href="home.html" class="nav-link active fs-5 m-2">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="plantilla.html" class="nav-link fs-5 m-2">Plantilla</a>
+              </li>
+              <li class="nav-item">
+                <a href="Partidos.html" class="nav-link fs-5 m-2">Partidos</a>
+              </li>
+              <li class="nav-item">
+                <a href="titulos.html" class="nav-link fs-5 m-2">Titulos</a>
+              </li>
+              <li class="nav-item">
+                <a href="historia.html" class="nav-link fs-5 m-2">Historia</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+  <main class="main">
+    <h1 class="main-title">Real Madrid - Titulos</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="trophy-card">
+            <div class="trophy-count">36</div>
+            <div class="trophy-name">Ligas</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="trophy-card">
+            <div class="trophy-count">15</div>
+            <div class="trophy-name">Copas de Europa</div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="trophy-card">
+            <div class="trophy-count">20</div>
+            <div class="trophy-name">Copas del Rey</div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="trophy-card">
+            <div class="trophy-count">9</div>
+            <div class="trophy-name">Mundiales de Clubes</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="trophy-card">
+            <div class="trophy-count">13</div>
+            <div class="trophy-name">Supercopas de España</div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="trophy-card">
+            <div class="trophy-count">6</div>
+            <div class="trophy-name">Supercopas de Europa</div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="trophy-card">
+            <div class="trophy-count">2</div>
+            <div class="trophy-name">Copas de la UEFA</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="trophy-card">
+            <div class="trophy-count">18</div>
+            <div class="trophy-name">Campeonatos Regionales</div>
+          </div>
+        </div>
+
+        
+      </div>
+
+    </div>
+  </main>
+  <hr>
+  <section>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="award-card">
+            <img src="https://private-user-images.githubusercontent.com/189624396/431598746-c18ecac4-931b-4f44-989d-2cac9b67d3e3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNTM4MjAsIm5iZiI6MTc0NDE1MzUyMCwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNTk4NzQ2LWMxOGVjYWM0LTkzMWItNGY0NC05ODlkLTJjYWM5YjY3ZDNlMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQyMzA1MjBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wNzAxZjcwNjMwZGMxZDk5MGY3OTI2Mjk1Y2Y5YTg1NmI4NzExYmZiMTNmZTZmNzMwOTFlMWQ0OTdiY2I3ZjliJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.h77p2xAo1zkANZNoCTorBaDK-ZbvEh_y2Eru9xLMemQ">
+            <div class="award-title">Trofeo FIFA al mejor club del siglo XX</div>
+            <div class="award-count">1</div>
+            <div class="award-years">11 de diciembre del año 2000.</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="award-card">
+            <img src="https://private-user-images.githubusercontent.com/189624396/431598744-10ab305e-ec15-47af-aa54-5e7c5bbcacff.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNTI4OTgsIm5iZiI6MTc0NDE1MjU5OCwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNTk4NzQ0LTEwYWIzMDVlLWVjMTUtNDdhZi1hYTU0LTVlN2M1YmJjYWNmZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQyMjQ5NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mYWY0NjRhNTAxM2E2OWQ1ZmM2ZGE1YTk0MDQyZTAyNGNmYWQwN2E1YmIwM2VhNDAyMjkyNmNhYjgxNGEyYThhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.5D865rCePVeFtztrlqpyWIblIKFvKvvto5Eb58SFkN4">
+            <div class="award-title">UEFA CHAMPIONS LEAGUE</div>
+            <div class="award-count">15</div>
+            <div class="award-years">1955-56  1956-57  1957-58  1958-59  1959-60  1965-66  1997-98 1999-00  2001-02  2013-14  2015-16  2016-17  2017-18  2021-22 2023-24</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="award-card">
+            <img src="https://private-user-images.githubusercontent.com/189624396/431598748-f78babff-9bb6-4352-b132-bb679ec9bf63.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNTI4OTgsIm5iZiI6MTc0NDE1MjU5OCwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNTk4NzQ4LWY3OGJhYmZmLTliYjYtNDM1Mi1iMTMyLWJiNjc5ZWM5YmY2My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQyMjQ5NThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMDkxMzU0NDY4ZDI5YWIyY2EwZGE5ODI3ZjNkZmJiNTZmY2Q0NjllOTczMDJmYTE4NDUzZDY0OWY4NTQwNWViJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.evYPZhB8wEWcmTLkos-SsQJC8Ci2rrwa7Dlp3J6m0fg">
+            <div class="award-title">LIGAS</div>
+            <div class="award-count">36</div>
+            <div class="award-years">1931-32  1932-33  1953-54  1954-55  1956-57  1957-58  1960-61 1961-62  1962-63  1963-64  1964-65  1966-67  1967-68  1968-69 1971-72  1974-75  1975-76  1977-78  1978-79  1979-80  1985-86 1986-87  1987-88  1988-89  1989-90  1994-95  1996-97  2000-01  2002-03  2006-07  2007-08  2011-12  2016-17  2019-20  2021-22  2023-24</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="award-card">
+            <img src="https://private-user-images.githubusercontent.com/189624396/431598743-e1c2abde-e8af-4d85-b6e4-c272f14ca27d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNTMyMDksIm5iZiI6MTc0NDE1MjkwOSwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNTk4NzQzLWUxYzJhYmRlLWU4YWYtNGQ4NS1iNmU0LWMyNzJmMTRjYTI3ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQyMjU1MDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYjM1MDQ2OGE2ZDUxY2ViMzNkNjEzYTRiYjE5ZmNlY2YyYjRhOWJjYmZjMzFiM2Q3NDEwMzIwMmIxZTMxYTYwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.RGldXrGEWc2J8P-T4oLgND6IeD15gKReuVtDX6Qom_M">
+            <div class="award-title">COPAS DEL REY</div>
+            <div class="award-count">20</div>
+            <div class="award-years">1904-05  1905-06  1906-07  1907-08  1916-17  1933-34  1935-36 1945-46  1946-47  1961-62  1969-70  1973-74  1974-75  1979-80 1981-82  1988-89  1992-93  2010-11  2013-14  2022-23</div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="award-card">
+            <img src="https://private-user-images.githubusercontent.com/189624396/431607519-6c312000-ad78-4e1f-9848-934950d94bc1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNTYwMDgsIm5iZiI6MTc0NDE1NTcwOCwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNjA3NTE5LTZjMzEyMDAwLWFkNzgtNGUxZi05ODQ4LTkzNDk1MGQ5NGJjMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQyMzQxNDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mOTA2OTQyMGNjZDNiOWI1YjIyZTFiMzJhZTFhOGI2ZTkxOWI0YjRhNTBmNzEyN2E4YzVlM2E1ZDVlYjM3MDgyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.NaNfrmltCc-pxiYnvKlJizt-638jzIiluquefupapS4">
+            <div class="award-title">SUPERCOPAS DE EUROPA</div>
+            <div class="award-count">6</div>
+            <div class="award-years">1960  1998  2002  2014  2016  2017  2018  2022  2024 </div>
+            <br>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="award-card">
+            <img src="https://private-user-images.githubusercontent.com/189624396/431598745-56847b0f-bae7-47ca-aee3-11fdcd941a9a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNTQzNDYsIm5iZiI6MTc0NDE1NDA0NiwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNTk4NzQ1LTU2ODQ3YjBmLWJhZTctNDdjYS1hZWUzLTExZmRjZDk0MWE5YS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQyMzE0MDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02MzlmMzdlOTYyNzkwOTA4N2Y3YmNhMDc0MjU5MWJhOTIyZTc0NTEwNjI0ZWEyMjQyODkxMGM4NTYyYzQ5NjZiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.tCGIPp6vyW0pVVXry_3lDbYqHpDP8JUEur2mHdq3fM4">
+            <div class="award-title">CAMPEONATOS REGIONALES</div>
+            <div class="award-count">18</div>
+            <div class="award-years">1903-04  1904-05  1905-06  1906-07  1907-08  1912-13  1915-16 1916-17  1917-18  1919-20  1921-22  1922-23  1923-24  1925-26 1926-27  1928-29  1929-30  1930-31</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="award-card">
+            <img src="https://private-user-images.githubusercontent.com/189624396/431598737-5415ee83-613a-4598-8eff-2c7a8ec88ab5.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNTQzNDYsIm5iZiI6MTc0NDE1NDA0NiwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNTk4NzM3LTU0MTVlZTgzLTYxM2EtNDU5OC04ZWZmLTJjN2E4ZWM4OGFiNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQyMzE0MDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lYzc3ZmQwZWZlNjgwYmIzYzRkMWQ3NmIzZTZiZjRiNmVjM2U4MWE2ZmNjOTFjNGFjMjkyNWJjODIwMjdjYjk4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.6ROemkvO3KKirubccwzqUol4p9-uuzlxLg4_0XA_tTQ">
+            <div class="award-title">SUPERCOPAS DE ESPAÑA</div>
+            <div class="award-count">13</div>
+            <div class="award-years">1988  1989  1990  1993  1997  2001  2003  2008  2012  2017  2020  2022  2024</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="award-card">
+            <img src="https://private-user-images.githubusercontent.com/189624396/431598739-db8e1c62-a561-4d02-afc4-c111ce7a7dd0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNTMyMDksIm5iZiI6MTc0NDE1MjkwOSwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNTk4NzM5LWRiOGUxYzYyLWE1NjEtNGQwMi1hZmM0LWMxMTFjZTdhN2RkMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQyMjU1MDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mZDU0NmE0YjMyZmRmZjIyMWNkOWEyMDliNjBkOGQyMTRmODE5YjBkNjg5MWEyNjE4MTNjNmVkZDE1NjA2MjdiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.1eOy4E9bnMQ6kfuKMbOy8N6ZGMrkgJ8wKiYEL9UU6e8">
+            <div class="award-title">MUNDIALES DE CLUBES</div>
+            <div class="award-count">9</div>
+            <div class="award-years">1960  1998  2002  2014  2016  2017  2018  2022  2024</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="award-card">
+            <img src="https://private-user-images.githubusercontent.com/189624396/431598741-a58712ed-6fb4-4e0d-b84f-956cdbce37e8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNTQ4NDEsIm5iZiI6MTc0NDE1NDU0MSwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNTk4NzQxLWE1ODcxMmVkLTZmYjQtNGUwZC1iODRmLTk1NmNkYmNlMzdlOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQyMzIyMjFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yZDkwZTJkZWQwN2U3NDBkMjBkNjFiMTM4NmNjMGQyYTlkZjkxYzA5ZTE5MzhhYTgxMjczNjg2Y2IzYTk4YzBkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.JRQi9f-jzMdbjiA_-fK05b7gA2kDeZFWc2pRGf8UvdQ">
+            <div class="award-title">COPAS DE LA EUFA</div>
+            <div class="award-count">2</div>
+            <div class="award-years">1984-85  1985-86</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="award-card">
+            <img src="https://private-user-images.githubusercontent.com/189624396/431598740-6a474f13-6894-429e-93cb-686b293323b8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNTUxNjksIm5iZiI6MTc0NDE1NDg2OSwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNTk4NzQwLTZhNDc0ZjEzLTY4OTQtNDI5ZS05M2NiLTY4NmIyOTMzMjNiOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQyMzI3NDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wYjUxNGRjODA2NzZkZjI1ZDYyOWE5YzIwNzYyYzk3MWZlMDc4MzdiNzExMTVmN2VjYzUwMTQ1Y2I1YzlhNTVhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.vHZLMZk0MSTuSWp6K2rm-HVpIH5Wpl9WLg5zHLoqQdI">
+            <div class="award-title">COPA IBEROAMERICANA</div>
+            <div class="award-count">1</div>
+            <div class="award-years">1994</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="award-card">
+            <img src="https://private-user-images.githubusercontent.com/189624396/431598747-ba4b6004-c8bf-4857-b920-bfdf387ca26d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNTUxNjksIm5iZiI6MTc0NDE1NDg2OSwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNTk4NzQ3LWJhNGI2MDA0LWM4YmYtNDg1Ny1iOTIwLWJmZGYzODdjYTI2ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQyMzI3NDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NzhmZGM5NzU4YWZhNjU0ZTZiNDI3MmM2NWNlOTQ4ZDZkYWVmNzk4ODNmMTMyYzE5NDBiNzcyZDZiYzExYjkzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.jds6IbIqe3_lrh5NlP_eSASF8747jtydWncoA7chR1c">
+            <div class="award-title">COPAS LATINAS</div>
+            <div class="award-count">2</div>
+            <div class="award-years">1955  1957</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="award-card">
+            <img src="https://private-user-images.githubusercontent.com/189624396/431598738-6b9903e6-684b-4e3f-b8e5-15fcec58387a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNTUxNjksIm5iZiI6MTc0NDE1NDg2OSwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNTk4NzM4LTZiOTkwM2U2LTY4NGItNGUzZi1iOGU1LTE1ZmNlYzU4Mzg3YS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQyMzI3NDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kNGQ2MjhiMjg2NmUyNjEzMjRmYTIyNWYzMTQ0YzNhYWYyMzAzODk2YjRlZmI5MmE0MGY4MTI3ODVlNTAxOTIwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.4SGETTwm-reMZ9ryJMzZWRVXIY2s_nkjWdWV2xQojv4">
+            <div class="award-title">TROFEOS MANCOMUNADOS</div>
+            <div class="award-count">5</div>
+            <div class="award-years">1931-32  1932-33  1933-34  1934-35  1935-36</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="award-card">
+            <img src="https://private-user-images.githubusercontent.com/189624396/431606868-ff06892c-46da-4208-8ae3-e946db3c78d2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNTYwMDgsIm5iZiI6MTc0NDE1NTcwOCwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNjA2ODY4LWZmMDY4OTJjLTQ2ZGEtNDIwOC04YWUzLWU5NDZkYjNjNzhkMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQyMzQxNDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kNjVkZDM4OGE0MTBjZTkyZTFkOTQ1OTc2ZjhhODJkNGQ1OTg5OGY2NGEzNjQ0MDZkMjNjYThmZDM1N2MwMmQ2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Ho8sclekEtuWJzvMElLzAW2aHErd76iOdOFUJtD39Ag">
+            <div class="award-title">COPA DE LA LIGA</div>
+            <div class="award-count">1</div>
+            <div class="award-years">1984-85</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="award-card">
+            <img src="https://private-user-images.githubusercontent.com/189624396/431606855-52e9ad36-b47e-4a13-8ae3-16083a42ec8e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNTYwMDgsIm5iZiI6MTc0NDE1NTcwOCwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNjA2ODU1LTUyZTlhZDM2LWI0N2UtNGExMy04YWUzLTE2MDgzYTQyZWM4ZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOFQyMzQxNDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lYzdlYmFiOTQ1MDM5ZjJhNGRjNzRkNzk3ZjI2NTg4NDUyMzlhZTg1MmIwMjI2Y2U3YWQ5YWNlMjAxYzY3ZmM1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.VC7wZagPFA_XTPoW0KqSYFMJL8MiC1_gGAbi23dBwI0">
+            <div class="award-title">PEQUEÑAS COPAS DEL MUNDO</div>
+            <div class="award-count">2</div>
+            <div class="award-years">1952  1956</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-body-tertiary text-center text-lg-start p-3">
+    <div class="text-center">
+      <a href="#" class="navbar-brand"><img
+          src="https://www.pngplay.com/wp-content/uploads/13/Real-Madrid-Transparent-File.png" alt="real-madrid-logo"
+          width="25px" class="m-2" /></a>
+      © 2025 Copyright
+    </div>
+  </footer>
+</body>
+
+</html>

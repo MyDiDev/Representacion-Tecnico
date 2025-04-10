@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>Historia</title>
+    <style>
+        body {
+            font-family: "Open Sans";
+        }
+
+        .main-title {
+            text-align: center;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+
+        span {
+            color: rgb(227, 227, 9);
+        }
+
+        .col-md-4 {
+            margin-bottom: 30px;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .card-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover .card-text {
+            transform: translateY(0);
+        }
+
+        .card:hover .card-title {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+        integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+        crossorigin="anonymous"></script>
+    <header style="position: sticky; top: 0; z-index: 999" class="shadow-sm">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+            <div class="container-fluid">
+                <a href="home.html" class="navbar-brand" aria-current="page"><img
+                        src="https://www.pngplay.com/wp-content/uploads/13/Real-Madrid-Transparent-File.png"
+                        alt="real-madrid-logo" width="30px" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+                    aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link active fs-5 m-2">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="plantilla.html" class="nav-link fs-5 m-2">Plantilla</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Partidos.html" class="nav-link fs-5 m-2">Partidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="titulos.html" class="nav-link fs-5 m-2">Titulos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="historia.html" class="nav-link fs-5 m-2">Historia</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <h1 class="main-title">HISTORIA <span>INOLVIDABLE</span></h1>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img
+                        src="https://private-user-images.githubusercontent.com/189624396/431628989-32cebe59-9587-40fe-b99f-75c894464c99.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNjMzMzUsIm5iZiI6MTc0NDE2MzAzNSwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNjI4OTg5LTMyY2ViZTU5LTk1ODctNDBmZS1iOTlmLTc1Yzg5NDQ2NGM5OS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOVQwMTQzNTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zMGUwMDM0ZmE1N2ZjZjRiNTMwY2UxZGEzYTZhZTdkNTM0OGFjODNjNWNkZmEyMTdiNDdkM2VhYTMxYjViNzhjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.cWAVqT6MALb-LQLokLmxgkZOmCb1E1CS2ovSaRWWYLs">
+                    <div class="card-body">
+                        <h5 class="card-title">2021-2025</h5>
+                        <p class="card-text">El Real Madrid hizo historia al ganar su 15ª Copa de Europa en 2024 frente
+                            al Borussia Dortmund en Londres. También logró la 14ª en 2022 ante el Liverpool. En esta
+                            década sumó además las Ligas 35 y 36, la quinta Supercopa de Europa, el octavo Mundial de
+                            Clubes, la 20ª Copa del Rey y dos Supercopas de España.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://private-user-images.githubusercontent.com/189624396/431620998-43171d8a-1d22-4cfd-994b-cb56cb35e56c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNjEzMzEsIm5iZiI6MTc0NDE2MTAzMSwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNjIwOTk4LTQzMTcxZDhhLTFkMjItNGNmZC05OTRiLWNiNTZjYjM1ZTU2Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOVQwMTEwMzFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yM2FlYmUyYTRkYmVlYjU5MTI2YzkxZWYzOWRmYWRmN2RiNzZiNmI5MzNkOGNlNjc1N2EzMzUyNTFjYjQ4OWYwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.dSnQ9VeoMh0ql7g1C1V5xp3-N8t11gljZ1XxRuyn6Ow"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">2011-2020</h5>
+                        <p class="card-text">En esta etapa, el Real Madrid ha dominado el fútbol mundial con cuatro
+                            Copas de Europa y cuatro Mundiales de Clubes. La Décima en 2014 marcó el inicio de un ciclo
+                            histórico que continuó con la Undécima, Duodécima y Decimotercera entre 2016 y 2018. En 2017
+                            logró un récord al ganar cinco títulos en un solo año.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://private-user-images.githubusercontent.com/189624396/431620994-e229fa51-be2a-4965-9adf-0022ca96d9cf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNjEzMzEsIm5iZiI6MTc0NDE2MTAzMSwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNjIwOTk0LWUyMjlmYTUxLWJlMmEtNDk2NS05YWRmLTAwMjJjYTk2ZDljZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOVQwMTEwMzFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YzlhYTY5YzIzMDRlYjU0YzZkNzIyOWFhZWU1ZmFlMjg5ZGI4YTJkYjMzYzE1ZTIzMzkzNTIwOThhY2E4YTIwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.x13hmmSBOSy8-ch9EQR0becp5rDBLVI5EUjDe3umC0g"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">2001-2010</h5>
+                        <p class="card-text">En esta década el Real Madrid volvió a pasearse orgulloso y triunfal por el
+                            Viejo Continente. El conjunto madridista levantó la novena Copa de Europa, la tercera
+                            Intercontinental y cuatro Ligas, entre otros títulos. Además, Florentino Pérez saneó la
+                            economía de la institución convirtiéndola en una de las más poderosas del planeta.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://private-user-images.githubusercontent.com/189624396/431620992-e778103a-0ae9-4e27-9631-49699f0e9381.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNjE1ODksIm5iZiI6MTc0NDE2MTI4OSwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNjIwOTkyLWU3NzgxMDNhLTBhZTktNGUyNy05NjMxLTQ5Njk5ZjBlOTM4MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOVQwMTE0NDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iYjA3NTRkNDE3MzhhMzBmYjNhZWZhM2FkOGNlMWUxZWFhNTA4MjgyZjNlNDk5YmUwMTM2MTJkMzI5MWUwMTM0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.cY5xB4JSt6CUpwurIywNJaZFoZlDu9P1s2UrZsbttf0"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">1991-2000</h5>
+                        <p class="card-text">Jorge Valdano, Fabio Capello y Vicente del Bosque fueron los nombres
+                            propios de esta década. Tres entrenadores de éxito que llevaron al Real Madrid a mandar en
+                            el campeonato de Liga y en Europa. Contaron con jugadores estelares para proclamarse
+                            campeones.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://private-user-images.githubusercontent.com/189624396/431620990-a1e0c93f-8737-414a-9df7-b2446fd5bcb3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNjE1ODksIm5iZiI6MTc0NDE2MTI4OSwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNjIwOTkwLWExZTBjOTNmLTg3MzctNDE0YS05ZGY3LWIyNDQ2ZmQ1YmNiMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOVQwMTE0NDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jZTZlYWVjMTk0N2IwNjZlOTBkYmZjODgxYzdkOWJlMDA4ZDIwN2U3NDk0MjA1ZmZiNTRmNTgzYjk4ZDY0YTRlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.K4_k6NDwT0TBXB3jCuydUeQNnMqwRZgPIJXTiZ3dzvw"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">1981-1990</h5>
+                        <p class="card-text">Una brillante generación de canteranos fue la protagonista de los años 80.
+                            ‘La Quinta del Buitre’, liderada por Emilio Butragueño, convirtió al Real Madrid en uno de
+                            los mejores equipos de la historia. Los goles de Hugo Sánchez también jugaron un papel muy
+                            importante en esta exitosa década.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://private-user-images.githubusercontent.com/189624396/431620997-219d0cb5-4345-469e-891f-ecbd8b04b5a5.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNjE1ODksIm5iZiI6MTc0NDE2MTI4OSwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNjIwOTk3LTIxOWQwY2I1LTQzNDUtNDY5ZS04OTFmLWVjYmQ4YjA0YjVhNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOVQwMTE0NDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMzY0Y2ExODM5YzU4NWU2NzQ0NDkyMjI4YzJhY2ZkN2QwNDRlM2ZjYTM0Y2NhMjJjNmYyNzUxNGZjZGEyMDM5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.fqagYTAFxYpZ-zUizThcJ84ZbV7BF0inFL7kP0WTRgg"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">1971-1980</h5>
+                        <p class="card-text">La década en la que el equipo consiguió el sexto campeonato de Liga en
+                            propiedad también estuvo marcada por la muerte de Santiago Bernabéu. El fútbol se vistió de
+                            luto el 2 de junio de 1978 al desaparecer el presidente que subió a lo más alto al Real
+                            Madrid.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://private-user-images.githubusercontent.com/189624396/431620996-8db133be-d98a-46e4-a57b-b59ab073f614.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNjE1ODksIm5iZiI6MTc0NDE2MTI4OSwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNjIwOTk2LThkYjEzM2JlLWQ5OGEtNDZlNC1hNTdiLWI1OWFiMDczZjYxNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOVQwMTE0NDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00OTc4OTJmNDhhMTRiMTdhN2QxOTE0ZjBiNDJiNWJiYWViMTc3NWY2NzgzY2U2MDBlNjQwZGMwNGQwZmFmMGRmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.6ALlRra6owLR1lrel6iM61psLA4JDHshoLOdfthI9F8"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">1961-1970</h5>
+                        <p class="card-text">El equipo se encontraba en una fase de renovación. En España fue muy
+                            superior, ganó ocho campeonatos de Liga, cinco de ellos consecutivos y con doblete de Liga y
+                            Copa. Fuera de nuestras fronteras consiguió la sexta Copa de Europa, lograda por el Real
+                            Madrid de los Yeyé.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://private-user-images.githubusercontent.com/189624396/431620993-2a2d0bbf-2ad7-4a01-98a3-0351cb45ff40.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNjE5MDAsIm5iZiI6MTc0NDE2MTYwMCwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNjIwOTkzLTJhMmQwYmJmLTJhZDctNGEwMS05OGEzLTAzNTFjYjQ1ZmY0MC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOVQwMTIwMDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02MmJmNDU3Zjk2YTZjZDk0OWZkMjU4OTc0YWJiZTVjNTg2ODg4MTgxNmUwNzI4ZDRmNWJjY2IxNjNmNjkzOGMyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.luPqOtHV3cJJpYqoveNdmtsmIrXAsQNkJw51EhdrXyk"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">1951-1960</h5>
+                        <p class="card-text">Esta década fue brillante. Una pléyade de jugadores, liderada por Alfredo
+                            Di Stéfano, situó al Real Madrid en la cúspide del fútbol. El equipo de las cinco Copas de
+                            Europa consecutivas asombró al mundo por su espectacular juego. Un inagotable torrente de
+                            éxitos legitimó al club como el más laureado de Europa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://private-user-images.githubusercontent.com/189624396/431620991-6c0a2c2a-e6c3-4f48-b6dd-f76c838452da.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNjE5MDAsIm5iZiI6MTc0NDE2MTYwMCwicGF0aCI6Ii8xODk2MjQzOTYvNDMxNjIwOTkxLTZjMGEyYzJhLWU2YzMtNGY0OC1iNmRkLWY3NmM4Mzg0NTJkYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOVQwMTIwMDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zMjE2OWMwYzU1ZjZlYzc1YTBiZmVjYjA0ZDc2MjI1OTFjMmY5MTNiYjQ5Nzg4ZmUyOTIzNTFiY2JkYmQwNGZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.haj1QF1dKiU2j3thwhyldHzNklU6ejTiPyiq_iy3zWw"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">1941-1950</h5>
+                        <p class="card-text">De esta etapa surgirán los éxitos futuros de la entidad y la rivalidad con
+                            el Barcelona. Hubo que reconstruir el estadio de Chamartín, hacer un nuevo equipo y retomar
+                            el pulso a la competición. Retos todos ellos que, gracias a la figura de Santiago Bernabéu,
+                            se consiguieron y superaron. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="bg-body-tertiary text-center text-lg-start p-3">
+        <div class="text-center">
+            <a href="#" class="navbar-brand"><img
+                    src="https://www.pngplay.com/wp-content/uploads/13/Real-Madrid-Transparent-File.png"
+                    alt="real-madrid-logo" width="25px" class="m-2" /></a>
+            © 2025 Copyright
+        </div>
+    </footer>
+</body>
+
+</html>
